@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /* Changed font */
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: #f0f0f0; /* Softer text color */
+  background-color: #1a202c; /* Darker background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  width: 90%; /* Slightly wider container */
+  max-width: 1200px; /* Added max-width */
+  height: 85%; /* Slightly shorter container */
+  color: #1a202c; /* Dark text color */
+  background-color: #f7fafc; /* Lighter background */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  overflow: auto;
+  gap: 2rem; /* Increased gap */
+  padding: 2rem; /* Increased padding */
+  border-radius: 1rem; /* More rounded corners */
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+.user-input-section {
+  height: auto; /* Height adapts to content */
+  width: min(45%, 450px); /* Responsive width */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: stretch; /* Stretch inputs to full width */
+  gap: 1.5rem; /* Increased gap */
+  padding: 1.5rem; /* Increased padding */
+  background-color: #e2e8f0; /* Lighter background */
+  border-radius: 0.75rem; /* More rounded corners */
+}
+
+.new-review-heading {
+  font-size: 2rem; /* Slightly smaller heading */
+  margin-bottom: 1.5rem; /* Increased margin */
+  font-weight: 700; /* Bolder font weight */
+  color: #1a202c; /* Dark text color */
+}
+
+.user-input-section > input,
+.rating-select {
+  width: 100%;
+  padding: 1rem; /* Increased padding */
+  outline: none;
+  border: 1px solid #cbd5e0; /* Added border */
+  font-size: 1rem; /* Slightly smaller font */
+  border-radius: 0.5rem; /* More rounded corners */
+  background-color: #fff; /* White background */
+  color: #1a202c; /* Dark text color */
+  transition: border-color 0.3s ease; /* Smooth border transition */
+}
+
+.user-input-section > input:focus,
+.rating-select:focus {
+  border-color: #3b82f6; /* Blue border on focus */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); /* Subtle blue shadow on focus */
+}
+
+.total-stars {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 0.5rem;
+}
+
+.rating-select {
+  padding: 0.75rem;
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.submit-review {
+  padding: 1rem 2.5rem;
+  border: none;
+  background-color: #3b82f6; /* Blue button */
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff; /* White text */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+.submit-review:hover,
+.submit-review:focus {
+  background-color: #2563eb; /* Darker blue on hover/focus */
+}
+
+.user-output-section {
+  height: auto; /* Height adapts to content */
+  width: min(50%, 600px); /* Responsive width */
+  background-color: #f7fafc; /* Lighter background */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch; /* Stretch cards to full width */
+  padding: 1.5rem; /* Increased padding */
+  overflow-y: auto;
+  border-radius: 0.75rem; /* More rounded corners */
+  gap: 1.5rem; /* Increased gap */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+}
+
+.user-output-heading {
+  font-size: 2rem; /* Slightly smaller heading */
+  margin-bottom: 1.5rem; /* Increased margin */
+  font-weight: 700; /* Bolder font weight */
+  color: #1a202c; /* Dark text color */
+  text-align: left; /* Align heading to the left */
+}
+
+.single-review-card {
+  background-color: #fff;
+  border-radius: 0.75rem; /* More rounded corners */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  padding: 1.25rem; /* Increased padding */
+  margin-bottom: 1rem; /* Increased margin */
+}
+
+.single-user-detail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem; /* Increased gap */
+  margin-bottom: 0.75rem; /* Added margin */
+}
+
+.user-name {
+  font-weight: 600; /* Slightly less bold */
+  color: #1a202c; /* Dark text color */
+  font-size: 1.125rem; /* Slightly larger font */
+}
+
+.user-rating {
+  color: #facc15; /* Yellow star rating */
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.delete-review {
+  background-color: #ef4444; /* Red delete button */
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem; /* Adjusted padding */
+  font-size: 0.9rem;
+  border-radius: 0.375rem; /* More rounded corners */
+  cursor: pointer;
+  margin-left: auto; /* Push delete button to the right */
+  transition: background-color 0.3s ease;
+}
+
+.delete-review:hover {
+  background-color: #dc2626; /* Darker red on hover */
+}
+
+.user-review-written {
+  font-size: 1rem;
+  color: #4a5568; /* Slightly darker text */
+  line-height: 1.75; /* Increased line height */
+  margin-top: 0.5rem; /* Added margin */
+  word-wrap: break-word;
+}
