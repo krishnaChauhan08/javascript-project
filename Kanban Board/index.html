@@ -8,22 +8,152 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        <h4 id="todo-header">TODO</h4>
-        <h4 id="in-progress-header">IN-PROGRESS</h4>
-        <h4 id="in-qa-header">In-QA</h4>
-        <h4 id="done-deader">DONE</h4>
-      </div>
-      <div class="drag-drop-container">
-        <div class="col3" id="todo" ondrop="drop(event)" ondragover="allowdrop(event)">
-          <p class="task" id="task-1" draggable="true" ondragstart="drag(event)">Task 1</p>
-          <p class="task" id="task-2" draggable="true" ondragstart="drag(event)">Task 2</p>
-          <p class="task" id="task-3" draggable="true" ondragstart="drag(event)">Task 3</p>
-          <p class="task" id="task-4" draggable="true" ondragstart="drag(event)">Task 4</p>
+      <div class="sidebar">
+        <div class="logo-menu-container">
+          <div class="logo-container">
+            <img
+              src="images/luxury-tower-set-4-piece.jpg"
+              alt=""
+              class="logo"
+            />
+            <p>Kanban Board</p>
+          </div>
+          <img
+            class="menu-icon"
+            src="images/luxury-tower-set-4-piece.jpg"
+            alt=""
+          />
         </div>
-        <div class="col3" id="in-progress" ondrop="drop(event)" ondragover="allowdrop(event)"></div>
-        <div class="col3" id="in-qa" ondrop="drop(event)" ondragover="allowdrop(event)"></div>
-        <div class="col3" id="done" ondrop="drop(event)" ondragover="allowdrop(event)"></div>
+        <div class="side-menu">
+          <div class="menu-item">
+            <img
+              class="icon"
+              src="images/luxury-tower-set-4-piece.jpg"
+              alt=""
+            />
+            <p class="title">Home</p>
+          </div>
+          <div class="menu-item">
+            <img
+              class="icon"
+              src="images/luxury-tower-set-4-piece.jpg"
+              alt=""
+            />
+            <p class="title">My Tasks</p>
+          </div>
+          <div class="menu-item">
+            <img
+              class="icon"
+              src="images/luxury-tower-set-4-piece.jpg"
+              alt=""
+            />
+            <p class="title">Inbox</p>
+          </div>
+          <p class="menu-title">Reporting</p>
+          <div class="menu-item">
+            <img
+              class="icon"
+              src="images/luxury-tower-set-4-piece.jpg"
+              alt=""
+            />
+            <p class="title">Inbox</p>
+          </div>
+          <div class="menu-item">
+            <img
+              class="icon"
+              src="images/luxury-tower-set-4-piece.jpg"
+              alt=""
+            />
+            <p class="title">Inbox</p>
+          </div>
+          <p class="menu-title">Favourite</p>
+          <div class="favourite-item">
+            <div class="color"></div>
+            <p class="title">Recruiting weekly me...</p>
+          </div>
+          <div class="favourite-item">
+            <div class="color"></div>
+            <p class="title">Recruiting weekly me...</p>
+          </div>
+          <div class="favourite-item">
+            <div class="color"></div>
+            <p class="title">Recruiting weekly me...</p>
+          </div>
+          <div class="favourite-item">
+            <div class="color"></div>
+            <p class="title">Recruiting weekly me...</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="main-header">Main Header</div>
+        <div class="content">
+          <div class="header">
+            <h4 id="todo-header">TODO</h4>
+            <h4 id="in-progress-header">IN-PROGRESS</h4>
+            <h4 id="in-qa-header">In-QA</h4>
+            <h4 id="done-deader">DONE</h4>
+          </div>
+          <div class="drag-drop-container">
+            <div
+              class="col3"
+              id="todo"
+              ondrop="drop(event)"
+              ondragover="allowdrop(event)"
+            >
+              <p
+                class="task"
+                id="task-1"
+                draggable="true"
+                ondragstart="drag(event)"
+              >
+                Task 1
+              </p>
+              <p
+                class="task"
+                id="task-2"
+                draggable="true"
+                ondragstart="drag(event)"
+              >
+                Task 2
+              </p>
+              <p
+                class="task"
+                id="task-3"
+                draggable="true"
+                ondragstart="drag(event)"
+              >
+                Task 3
+              </p>
+              <p
+                class="task"
+                id="task-4"
+                draggable="true"
+                ondragstart="drag(event)"
+              >
+                Task 4
+              </p>
+            </div>
+            <div
+              class="col3"
+              id="in-progress"
+              ondrop="drop(event)"
+              ondragover="allowdrop(event)"
+            ></div>
+            <div
+              class="col3"
+              id="in-qa"
+              ondrop="drop(event)"
+              ondragover="allowdrop(event)"
+            ></div>
+            <div
+              class="col3"
+              id="done"
+              ondrop="drop(event)"
+              ondragover="allowdrop(event)"
+            ></div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
